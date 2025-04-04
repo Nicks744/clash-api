@@ -1,0 +1,98 @@
+.card {
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    width: 200px;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2); /* Sombra para destaque */
+}
+
+/* Efeito de destaque ao passar o mouse */
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Imagem da carta */
+.imgCard {
+    width: 90px;
+    height: 130px;
+}
+
+/* Nome da carta */
+.card h3 {
+    font-size: 20px;
+    margin: 10px 0;
+    text-transform: uppercase;
+}
+
+/* Custo de Elixir */
+.elixir {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Raridade */
+.rarity {
+    font-size: 14px;
+    padding: 5px;
+    border-radius: 5px;
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+/* 🔹 Estilos baseados na raridade */
+
+/* Cartas Comuns */
+.common {
+    background-color: #666;
+    color: white;
+    border: 2px solid gray;
+}
+
+/* Cartas Raras */
+.rare {
+    background-color: #005bbb;
+    color: white;
+    border: 2px solid #007bff;
+}
+
+/* Cartas Épicas */
+.epic {
+    background-color: #6b2c91;
+    color: white;
+    border: 2px solid #9b59b6;
+}
+
+/* Cartas Lendárias */
+.legendary {
+    background: linear-gradient(135deg,
+        #ff00ff, #00ffff, #ffff00, #ff6600, #00ff00, #0000ff, #ff00ff);
+    background-size: 600% 600%;
+    animation: legendaryGlow 5s ease infinite;
+    color: white;
+    border: 2px solid white;
+    font-weight: bold;
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+    text-shadow: 1px 1px 2px #000;
+    transition: all 0.3s ease;
+}
+
+@keyframes legendaryGlow {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.elixir {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.elixir-icon {
+    width: 50px;
+    height: 50px;
+}
+
